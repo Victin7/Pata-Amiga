@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pata Amiga | Sobre nós</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="" width="44" height="44">
+        <span>Pata Amiga</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html" aria-current="page">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao">
+      <div class="container texto-largo">
+        <h1>Sobre a Pata Amiga</h1>
+
+        <h2>Nossa história</h2>
+        <p>
+          A Pata Amiga começou quando um grupo de estudantes percebeu que vários cães e gatos
+          viviam nas ruas do bairro sem comida e sem cuidados. Começamos com um único pote de
+          ração na calçada. Hoje, organizamos voluntários, doações e parcerias para que
+          nenhum animal passe fome.
+        </p>
+
+        <h2>Missão</h2>
+        <p>
+          Combater a fome e o abandono de cães e gatos, oferecendo alimentação, cuidados de
+          saúde e a chance de um novo lar.
+        </p>
+
+        <h2>Público atendido</h2>
+        <ul>
+          <li>Cães e gatos abandonados ou em situação de rua;</li>
+          <li>Protetores independentes que cuidam de animais por conta própria;</li>
+          <li>Famílias que desejam adotar com responsabilidade;</li>
+          <li>Moradores que querem ajudar, mas não sabem por onde começar.</li>
+        </ul>
+
+        <h2>Nossos objetivos</h2>
+        <ol>
+          <li>Manter pontos de alimentação abastecidos todos os dias.</li>
+          <li>Garantir vacinação e castração aos animais resgatados.</li>
+          <li>Incentivar a adoção responsável e combater o abandono.</li>
+        </ol>
+
+        <!-- INTERAÇÃO JAVASCRIPT: o botão mostra/oculta o painel abaixo (ver js/script.js) -->
+        <h2>Nossos resultados</h2>
+        <button id="botao-resultados" class="botao" type="button" aria-expanded="false" aria-controls="painel-resultados">
+          Mostrar resultados
+        </button>
+
+        <div id="painel-resultados" class="painel-resultados">
+          <ul>
+            <li><strong>12</strong> pontos de alimentação ativos</li>
+            <li><strong>350</strong> kg de ração distribuídos por mês</li>
+            <li><strong>80</strong> animais adotados no último ano</li>
+          </ul>
+          <p class="aviso">* Números fictícios, criados para este projeto acadêmico.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Pata Amiga</strong> — ONG fictícia criada para o Projeto Integrador da UNICID.</p>
+      <p>Este site é um protótipo acadêmico: não é um site oficial e não recebe doações reais.</p>
+    </div>
+  </footer>
+
+  <!-- Liga esta página ao JavaScript da interação (fica no fim para o HTML carregar antes) -->
+  <script src="js/script.js"></script>
+</body>
+</html>

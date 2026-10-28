@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200">
+  <!-- Ilustração própria: pote cheio de ração -->
+  <rect width="320" height="200" fill="#fde9d4"/>
+  <ellipse cx="160" cy="120" rx="80" ry="16" fill="#7c2d12"/>
+  <path d="M80 120 L96 170 L224 170 L240 120 Z" fill="#c2410c"/>
+  <circle cx="125" cy="112" r="11" fill="#92400e"/>
+  <circle cx="150" cy="104" r="11" fill="#a16207"/>
+  <circle cx="175" cy="110" r="11" fill="#92400e"/>
+  <circle cx="198" cy="114" r="10" fill="#a16207"/>
+  <circle cx="140" cy="118" r="9" fill="#a16207"/>
+  <ellipse cx="160" cy="148" rx="12" ry="10" fill="#fde9d4"/>
+  <circle cx="148" cy="136" r="4" fill="#fde9d4"/>
+  <circle cx="157" cy="132" r="4" fill="#fde9d4"/>
+  <circle cx="166" cy="132" r="4" fill="#fde9d4"/>
+  <circle cx="174" cy="136" r="4" fill="#fde9d4"/>
+</svg>

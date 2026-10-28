@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pata Amiga | Início</title>
+  <!-- Liga esta página à folha de estilos que fica na pasta css -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO: logo + menu (igual nas 4 páginas) -->
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="" width="44" height="44">
+        <span>Pata Amiga</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- DESTAQUE PRINCIPAL: nome da ONG, causa e chamadas -->
+    <section class="destaque">
+      <div class="container destaque-conteudo">
+        <div class="destaque-texto">
+          <p class="etiqueta">ONG de proteção animal</p>
+          <h1>Nenhum pet com fome. Nenhum pet sem cuidado.</h1>
+          <p>
+            A <strong>Pata Amiga</strong> é uma organização que alimenta, cuida e encontra
+            novos lares para cães e gatos abandonados nas ruas. Acreditamos que toda
+            vida merece um pote cheio e um lugar seguro para dormir.
+          </p>
+          <div class="botoes">
+            <a href="projetos.html" class="botao">Conheça nossos projetos</a>
+            <a href="contato.html" class="botao botao-secundario">Quero ajudar</a>
+          </div>
+        </div>
+        <img src="img/destaque-pets.svg"
+             alt="Ilustração de um cachorro e um gato sentados ao lado de um pote cheio de ração"
+             class="destaque-imagem" width="480" height="380">
+      </div>
+    </section>
+
+    <!-- O QUE FAZEMOS: três cartões organizados com Flexbox -->
+    <section class="secao">
+      <div class="container">
+        <h2>O que fazemos</h2>
+        <div class="cartoes">
+          <article class="cartao">
+            <h3>Alimentamos</h3>
+            <p>Mantemos pontos de alimentação nos bairros, com ração e água limpa todos os dias.</p>
+          </article>
+          <article class="cartao">
+            <h3>Cuidamos</h3>
+            <p>Levamos animais resgatados ao veterinário, com vacinação e castração.</p>
+          </article>
+          <article class="cartao">
+            <h3>Encontramos lares</h3>
+            <p>Conectamos cada pet recuperado a uma família responsável e preparada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAMADA PARA PARTICIPAR -->
+    <section class="secao secao-chamada">
+      <div class="container">
+        <h2>Você pode fazer parte disso</h2>
+        <p>Doando ração, sendo voluntário ou oferecendo um lar temporário. Toda ajuda conta.</p>
+        <a href="contato.html" class="botao">Fale com a gente</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ: aviso de projeto acadêmico (igual nas 4 páginas) -->
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Pata Amiga</strong> — ONG fictícia criada para o Projeto Integrador da UNICID.</p>
+      <p>Este site é um protótipo acadêmico: não é um site oficial e não recebe doações reais.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

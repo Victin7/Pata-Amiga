@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 380" width="480" height="380">
+  <!-- Ilustração própria: cachorro, gato e pote de ração -->
+  <rect width="480" height="380" rx="24" fill="#fff8f0"/>
+  <circle cx="400" cy="70" r="40" fill="#fbbf24"/>
+  <rect x="0" y="300" width="480" height="80" rx="0" fill="#e7c9a9"/>
+
+  <!-- Cachorro -->
+  <ellipse cx="150" cy="255" rx="70" ry="55" fill="#b45309"/>
+  <circle cx="150" cy="160" r="55" fill="#b45309"/>
+  <ellipse cx="102" cy="150" rx="18" ry="38" fill="#7c2d12" transform="rotate(15 102 150)"/>
+  <ellipse cx="198" cy="150" rx="18" ry="38" fill="#7c2d12" transform="rotate(-15 198 150)"/>
+  <ellipse cx="150" cy="185" rx="28" ry="20" fill="#fde9d4"/>
+  <circle cx="132" cy="150" r="7" fill="#3b2416"/>
+  <circle cx="168" cy="150" r="7" fill="#3b2416"/>
+  <ellipse cx="150" cy="177" rx="10" ry="7" fill="#3b2416"/>
+  <path d="M140 192 Q150 202 160 192" stroke="#3b2416" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="120" cy="305" rx="20" ry="10" fill="#7c2d12"/>
+  <ellipse cx="180" cy="305" rx="20" ry="10" fill="#7c2d12"/>
+
+  <!-- Gato -->
+  <ellipse cx="350" cy="265" rx="50" ry="45" fill="#6b7280"/>
+  <circle cx="350" cy="190" r="42" fill="#6b7280"/>
+  <polygon points="315,170 322,125 345,155" fill="#6b7280"/>
+  <polygon points="385,170 378,125 355,155" fill="#6b7280"/>
+  <polygon points="322,160 325,138 338,155" fill="#fda4af"/>
+  <polygon points="378,160 375,138 362,155" fill="#fda4af"/>
+  <ellipse cx="335" cy="188" rx="6" ry="8" fill="#16a34a"/>
+  <ellipse cx="365" cy="188" rx="6" ry="8" fill="#16a34a"/>
+  <polygon points="344,203 356,203 350,210" fill="#fda4af"/>
+  <path d="M398 280 Q440 260 425 220" stroke="#6b7280" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+  <!-- Pote de ração -->
+  <ellipse cx="250" cy="300" rx="48" ry="10" fill="#7c2d12"/>
+  <path d="M202 300 L212 335 L288 335 L298 300 Z" fill="#c2410c"/>
+  <circle cx="230" cy="296" r="7" fill="#92400e"/>
+  <circle cx="246" cy="292" r="7" fill="#a16207"/>
+  <circle cx="262" cy="295" r="7" fill="#92400e"/>
+  <circle cx="276" cy="298" r="6" fill="#a16207"/>
+</svg>

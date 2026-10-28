@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200">
+  <!-- Ilustração própria: casinha com coração -->
+  <rect width="320" height="200" fill="#fde9d4"/>
+  <polygon points="160,30 250,100 70,100" fill="#9a3412"/>
+  <rect x="90" y="100" width="140" height="80" fill="#fff8f0"/>
+  <path d="M135 180 V140 a25 25 0 0 1 50 0 V180 Z" fill="#3b2416"/>
+  <path d="M160 128 C150 115 132 122 140 136 L160 152 L180 136 C188 122 170 115 160 128 Z" fill="#ef4444"/>
+</svg>

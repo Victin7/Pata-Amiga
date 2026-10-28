@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pata Amiga | Contato</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="" width="44" height="44">
+        <span>Pata Amiga</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao">
+      <div class="container contato">
+
+        <!-- Lado esquerdo: orientações de voluntariado -->
+        <div class="contato-info">
+          <h1>Fale com a gente</h1>
+          <h2>Como participar</h2>
+          <ul>
+            <li><strong>Voluntário:</strong> ajude a abastecer os pontos de alimentação.</li>
+            <li><strong>Lar temporário:</strong> acolha um pet enquanto ele espera adoção.</li>
+            <li><strong>Doador de ração:</strong> entregue ração nos nossos pontos de coleta.</li>
+            <li><strong>Divulgador:</strong> compartilhe nossos projetos nas redes sociais.</li>
+          </ul>
+          <p class="aviso">
+            Atenção: este formulário é apenas uma simulação acadêmica.
+            Nenhuma mensagem é enviada e nenhum dado é guardado.
+          </p>
+        </div>
+
+        <!-- Lado direito: formulário (a validação está em js/formulario.js) -->
+        <form id="form-contato" class="formulario" novalidate>
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required minlength="3" autocomplete="name">
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+
+          <div class="campo">
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" name="assunto" required>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required minlength="10"></textarea>
+          </div>
+
+          <button type="submit" class="botao">Enviar mensagem</button>
+
+          <!-- Aqui o JavaScript escreve o erro ou a confirmação -->
+          <p id="mensagem-retorno" class="retorno" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Pata Amiga</strong> — ONG fictícia criada para o Projeto Integrador da UNICID.</p>
+      <p>Este site é um protótipo acadêmico: não é um site oficial e não recebe doações reais.</p>
+    </div>
+  </footer>
+
+  <!-- Liga esta página ao JavaScript da validação do formulário -->
+  <script src="js/formulario.js"></script>
+</body>
+</html>

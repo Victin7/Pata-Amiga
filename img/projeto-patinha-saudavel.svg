@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200">
+  <!-- Ilustração própria: coração com cruz de saúde -->
+  <rect width="320" height="200" fill="#fde9d4"/>
+  <path d="M160 70 C140 35 85 45 95 95 C102 125 140 150 160 170 C180 150 218 125 225 95 C235 45 180 35 160 70 Z" fill="#c2410c"/>
+  <rect x="148" y="78" width="24" height="64" rx="4" fill="#ffffff"/>
+  <rect x="128" y="98" width="64" height="24" rx="4" fill="#ffffff"/>
+</svg>

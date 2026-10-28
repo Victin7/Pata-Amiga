@@ -1,0 +1,327 @@
+/* =========================================================
+   ESTILOS DO SITE PATA AMIGA
+   Este arquivo é usado pelas 4 páginas (link no <head>).
+   ========================================================= */
+
+/* ---------- 1. Cores e fontes (variáveis) ---------- */
+:root {
+  --laranja: #c2410c;        /* cor principal (botões) */
+  --laranja-escuro: #9a3412; /* botão ao passar o mouse */
+  --marrom: #3b2416;         /* textos */
+  --creme: #fff8f0;          /* fundo da página */
+  --bege: #fde9d4;           /* fundo de seções */
+  --branco: #ffffff;
+  --verde: #166534;          /* mensagem de sucesso */
+  --vermelho: #b91c1c;       /* mensagem de erro */
+}
+
+/* ---------- 2. Base ---------- */
+* {
+  box-sizing: border-box; /* padding e borda não aumentam a largura */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--marrom);
+  background-color: var(--creme);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%; /* imagem nunca passa da largura da tela */
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.5rem; margin-top: 24px; }
+h3 { font-size: 1.2rem; }
+
+p { margin-bottom: 12px; }
+
+ul, ol { padding-left: 22px; margin-bottom: 12px; }
+
+/* Contorno visível quando navega pelo teclado (Tab) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--laranja);
+  outline-offset: 3px;
+}
+
+/* Centraliza o conteúdo e limita a largura */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ---------- 3. Cabeçalho e menu (Flexbox) ---------- */
+.cabecalho {
+  background-color: var(--branco);
+  border-bottom: 3px solid var(--laranja);
+  padding: 12px 0;
+}
+
+.cabecalho-conteudo {
+  display: flex;
+  justify-content: space-between; /* logo na esquerda, menu na direita */
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--laranja);
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: var(--marrom);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu a:hover,
+.menu a[aria-current="page"] { /* página atual fica destacada */
+  background-color: var(--bege);
+  color: var(--laranja-escuro);
+}
+
+/* ---------- 4. Botões ---------- */
+.botao {
+  display: inline-block;
+  background-color: var(--laranja);
+  color: var(--branco);
+  padding: 12px 22px;
+  border: 2px solid var(--laranja);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: var(--laranja-escuro);
+  border-color: var(--laranja-escuro);
+}
+
+.botao-secundario {
+  background-color: transparent;
+  color: var(--laranja-escuro);
+}
+
+.botao-secundario:hover {
+  color: var(--branco);
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* ---------- 5. Destaque da página inicial ---------- */
+.destaque {
+  background-color: var(--bege);
+  padding: 48px 0;
+}
+
+.destaque-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.destaque-texto { flex: 1; }
+.destaque-imagem { flex: 1; max-width: 480px; }
+
+.etiqueta {
+  display: inline-block;
+  background-color: var(--branco);
+  color: var(--laranja-escuro);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* ---------- 6. Seções e cartões (Flexbox) ---------- */
+.secao { padding: 48px 0; }
+
+.secao-chamada {
+  background-color: var(--marrom);
+  color: var(--creme);
+  text-align: center;
+}
+
+.secao-chamada h2 { margin-top: 0; }
+
+.cartoes {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.cartao {
+  flex: 1; /* os três cartões dividem o espaço igualmente */
+  background-color: var(--branco);
+  border: 1px solid #f0d5bd;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.cartao h2 { margin-top: 12px; }
+
+.projeto img {
+  border-radius: 8px;
+  background-color: var(--bege);
+  width: 100%;
+}
+
+.ajuda {
+  border-top: 1px dashed #e7b98f;
+  padding-top: 12px;
+}
+
+.introducao { font-size: 1.1rem; }
+
+.centralizado {
+  text-align: center;
+  margin-top: 32px;
+}
+
+/* Textos longos (página Sobre) ficam mais estreitos para ler melhor */
+.texto-largo { max-width: 760px; }
+
+/* ---------- 7. Painel da interação (página Sobre) ---------- */
+.painel-resultados {
+  display: none; /* começa escondido; o JavaScript mostra/oculta */
+  margin-top: 16px;
+  background-color: var(--bege);
+  border-left: 5px solid var(--laranja);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.aviso {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* ---------- 8. Contato e formulário ---------- */
+.contato {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contato-info,
+.formulario { flex: 1; }
+
+.formulario {
+  background-color: var(--branco);
+  border: 1px solid #f0d5bd;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.campo { margin-bottom: 16px; }
+
+.campo label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #d6b89c;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+/* Mensagem de retorno do formulário */
+.retorno {
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.retorno.erro {
+  color: var(--vermelho);
+  background-color: #fee2e2;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.retorno.sucesso {
+  color: var(--verde);
+  background-color: #dcfce7;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/* ---------- 9. Rodapé ---------- */
+.rodape {
+  background-color: var(--marrom);
+  color: var(--creme);
+  text-align: center;
+  padding: 24px 0;
+  font-size: 0.9rem;
+}
+
+.rodape p { margin-bottom: 4px; }
+
+/* ---------- 10. Responsividade (celular) ----------
+   Em telas de até 768px, o que estava lado a lado
+   passa a ficar um embaixo do outro. */
+@media (max-width: 768px) {
+  h1 { font-size: 1.7rem; }
+
+  .cabecalho-conteudo {
+    flex-direction: column; /* logo em cima, menu embaixo */
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .destaque-conteudo,
+  .cartoes,
+  .contato {
+    flex-direction: column;
+  }
+
+  .destaque { padding: 32px 0; }
+  .secao { padding: 32px 0; }
+}
